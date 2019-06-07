@@ -6,11 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BioComponent } from './bio/bio.component';
 //issue
+import { ApiComponent } from './api/api.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BioComponent
+    BioComponent,
+    ApiComponent
   ],
   imports: [
     BrowserModule,

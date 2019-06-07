@@ -22,20 +22,27 @@
             Make the width of your bio 65% of the screen, and make sure it is centered.
         </li>
         <li>
-            Now we are going to start the test, create a link that navigates to a component called ApiComponent. Make sure this button is 508 compliant.
+            Now we are going to start the test, create a link that navigates to a component called ApiComponent. Make
+            sure this button is 508 compliant.
         </li>
     </ol>
 </div>
-<hr/>
+<hr />
 <div style="text-align:center">
-    <h2>My name is 
+    <h2>My name is
         <span class="profileName">
-            {{profile_name}}
+            {{profile_name| uppercase}}
+            <!--  data binding -->
         </span>
     </h2>
-    <img src="{{profile_pic}}" width="250px" height="250px" alt=""/>
+    <a href="https://github.com/BradPahari" target="_Blank"><img src="{{profile_pic}}" width="250px" height="250px"
+            alt="" /> </a>
     <div class="bio">
         <!-- BIO ABOUT YOURSELF -->
+        <span class="bio">
+            {{profile_bio}}
+        </span>
     </div>
 </div>
+<a routeLink="/api">Api Component</a>
 <!-- Add nav link here -->
